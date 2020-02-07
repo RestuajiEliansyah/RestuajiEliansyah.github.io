@@ -1,17 +1,79 @@
-* {
-  margin:0px;
-  padding:0px;
-}
+html, body
+    margin: 0
+    font-family: 'Segoe UI', sans-serif
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
-}
+div.shape-container
+    position: absolute
+    width: 100%
+    height: 330px
+    overflow: hidden
+    
+    div.shape
+        position: relative
+        top: -200px
+        left: -450px
+        background-color: #444
+        width: 3000px
+        height: 530px
+        border-radius: 50%
+            
+div.info
+    position: relative
+    z-index: 1
+    top: 135px
+    left: calc(50vw - 150px)
+    height: calc(350px + 4vw)
+    width: 300px
+    background-color: #f2f2f2
+    border-radius: 25px
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,.43)
+    overflow: hidden
+  
+    div.shape-container
+        width: 100vw
+        top: -135px
+        left: calc(-50vw + 150px)
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-}
+        div.shape
+            background-image: url(https://abrilquatrorodas.files.wordpress.com/2017/01/homer-simpson.jpg?quality=70&strip=info&w=1024)
+            background-repeat: no-repeat
+            background-size: 300px 200px
+            background-position: calc(50vw + 300px) 330px
+
+    span.content
+        display: inline-block
+        margin-top: calc(50% + 4vw)
+        width: 80%
+        height: 40%
+        padding: 0 10%
+        text-align: left
+        color: #444
+        
+        h3
+            margin: 0
+            color: #222
+            font-size: 25px
+            font-weight: normal
+
+        p
+            margin: 0
+            font-size: 15px
+
+        span.logos
+            display: inline-block
+            margin-top: 13%
+            width: 100%
+
+            span.fab
+                display: block
+                text-align: center
+                font-size: 22px
+                width: 1/6 * 100%
+                float: left
+
+                &:hover
+                    color: #222
+                    cursor: pointer
+                
+a
+    color: #444
